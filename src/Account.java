@@ -1,18 +1,18 @@
-import java.time.Date;
+import java.time.LocalDate;
 
 public class Account {
     private String accountNumber;
     private double balance;
     private String branch;
-    private date openingDate;
+    private LocalDate openingDate;
     private String accountType;
     private Customer customer;
 
-    public Account (String accountNumber,String branch, String accountType, Customer customer) {
+    public Account (String accountNumber, double balance, String branch, LocalDate openingDate, String accountType, Customer customer) {
         this.accountNumber = accountNumber;
         this.balance = 0.0;
         this.branch = branch;
-        this.openingDate = Date.now();
+        this.openingDate = LocalDate.now();
         this.accountType = accountType;
         this.customer = customer;
     }
@@ -41,7 +41,7 @@ public class Account {
         return customer;
     }
 
-    public void deposit(doble amount) {
+    public void deposit(double amount) {
         if (amount <= 0) {
             throw new IllegalArgumentException(
                 "Deposit must be greater than zero"

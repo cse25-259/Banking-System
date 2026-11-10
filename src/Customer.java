@@ -24,7 +24,7 @@ public class Customer
         return address;
      }
      
-     public String getPhoneNumber() {
+     public int getPhoneNumber() {
         return phoneNumber;
      }
 }

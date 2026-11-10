@@ -1,10 +1,10 @@
-import java.time.Date;
+import java.time.LocalDate;
 
 public class SavingsAccount extends Account {
     private static final double minimumInitialDeposit = 50.00;
     private static final double monthlyInterestRate = 0.0005;
 
-    public SavingsAccount(String accountNumber, double balance, String branch, Date openingDate, customer customer) {
+    public SavingsAccount(String accountNumber, double balance, String branch, LocalDate openingDate, Customer customer) {
 
         super(accountNumber, balance, branch, openingDate, "Savings",customer); 
 
@@ -21,7 +21,7 @@ public class SavingsAccount extends Account {
 
     @Override
     public void withdraw(double amount) {
-        throw new UnsportedOperationException(
+        throw new UnsupportedOperationException(
             "Withdrawals are not allowed from a savings account."
         );
     }
