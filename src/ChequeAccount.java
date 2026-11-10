@@ -16,7 +16,7 @@ public class ChequeAccount extends Account {
         if (employeeAddress == null  || employerAddress.trim().isEmpty()) {
             throw new IllegalArgumentException(
                 "Employer address is required for a cheque account."
-            )
+            );
         }
         this.employerName = employerName;
         this.employerAddress = employerAddress;
