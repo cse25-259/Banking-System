@@ -8,7 +8,7 @@ public class Account {
     private String accountType;
     private Customer customer;
 
-    public Account (String accountNumber,String balance, String branch, Date openingDate, String accountType, Customer customer) {
+    public Account (String accountNumber,String branch, String accountType, Customer customer) {
         this.accountNumber = accountNumber;
         this.balance = 0.0;
         this.branch = branch;
