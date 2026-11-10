@@ -4,7 +4,7 @@ public class InvestmentAccount extends Account {
     private static final double minimumInitialDeposit = 500.00;
     private static final double monthlyInterestRate = 0.05;
 
-    public InvestmentAccount(String accountNumber, double balance, String branch, Date openingDate, String accountType, Customer customer) {
+    public InvestmentAccount(String accountNumber, double balance, String branch, Date openingDate, Customer customer) {
         super (accountNumber,balance, branch, openingDate,  "Investment", customer);
 
         if (balance < minimumInitialDeposit) {
