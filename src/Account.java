@@ -52,8 +52,8 @@ public class Account {
 
     }
 
-    public void void withdraw(double amount) {
-        if(amount <=) {
+    public void withdraw(double amount) {
+        if(amount <= 0) {
             throw new IllegalArgumentException(
                 "Withdrawal must be greater than zero"
             );
