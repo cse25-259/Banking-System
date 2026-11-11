@@ -10,9 +10,9 @@ public class Account {
 
     public Account (String accountNumber, double balance, String branch, LocalDate openingDate, String accountType, Customer customer) {
         this.accountNumber = accountNumber;
-        this.balance = 0.0;
+        this.balance = balance;
         this.branch = branch;
-        this.openingDate = LocalDate.now();
+        this.openingDate = openingDate;
         this.accountType = accountType;
         this.customer = customer;
     }
@@ -25,7 +25,7 @@ public class Account {
         return balance;
     }
 
-    public String Branch() {
+    public String getBranch() {
         return branch;
     }
 
